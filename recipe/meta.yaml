@@ -35,6 +35,24 @@ requirements:
 test:
   imports:
     - bloptools
+    - bloptools.bo
+    - bloptools.bo.acquisition
+    - bloptools.bo.kernels
+    - bloptools.bo.models
+    - bloptools.de
+    - bloptools.de.de_opt_utils
+    - bloptools.de.de_optimization
+    - bloptools.de.hardware_flyer
+    - bloptools.experiments
+    - bloptools.experiments.atf
+    - bloptools.experiments.atf.atf
+    - bloptools.experiments.nsls2
+    - bloptools.experiments.nsls2.iss
+    - bloptools.experiments.nsls2.tes
+    - bloptools.experiments.shadow
+    - bloptools.experiments.shadow.chx
+    - bloptools.experiments.shadow.tes
+    - bloptools.utils
   commands:
     - pip check
   requires:
@@ -49,5 +67,4 @@ about:
 extra:
   recipe-maintainers:
     - mrakitin
-    - kbeeperez
     - conda-forge/event-model
