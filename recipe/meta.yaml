@@ -67,4 +67,6 @@ about:
 extra:
   recipe-maintainers:
     - mrakitin
+    - AbbyGi
+    - thomaswmorris
     - conda-forge/event-model
