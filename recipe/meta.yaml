@@ -35,10 +35,10 @@ requirements:
 test:
   imports:
     - bloptools
-    - bloptools.bo
-    - bloptools.bo.acquisition
-    - bloptools.bo.kernels
-    - bloptools.bo.models
+    - bloptools.bayesian
+    - bloptools.bayesian.acquisition
+    - bloptools.bayesian.kernels
+    - bloptools.bayesian.models
     - bloptools.de
     - bloptools.de.de_opt_utils
     - bloptools.de.de_optimization
@@ -49,9 +49,9 @@ test:
     - bloptools.experiments.nsls2
     - bloptools.experiments.nsls2.iss
     - bloptools.experiments.nsls2.tes
-    - bloptools.experiments.shadow
-    - bloptools.experiments.shadow.chx
-    - bloptools.experiments.shadow.tes
+    - bloptools.experiments.sirepo
+    - bloptools.experiments.sirepo.tes
+    - bloptools.tasks
     - bloptools.utils
   commands:
     - pip check
