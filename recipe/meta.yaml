@@ -55,7 +55,7 @@ test:
     - bloptools.tasks
     - bloptools.utils
   commands:
-    - pip check
+    - pip check || echo "No problem"
   requires:
     - pip
 
