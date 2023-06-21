@@ -10,7 +10,7 @@ source:
   sha256: e91a9d7b8bf99d35a5f22e5a987e41335575b24820e3bc6e34fd845f2312a9e7
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -20,7 +20,7 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - bluesky >=1.6.1
+    - bluesky >=1.11.0
     - botorch
     - databroker
     - gpytorch
@@ -31,7 +31,6 @@ requirements:
     - pytorch
     - scipy
     - sirepo-bluesky
-    - zict <3.0.0
 
 test:
   imports:
