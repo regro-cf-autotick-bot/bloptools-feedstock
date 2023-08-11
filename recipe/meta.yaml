@@ -28,9 +28,10 @@ requirements:
     - numpy
     - ophyd
     - ortools-python
+    - pytables
     - pytorch
     - scipy
-    - sirepo-bluesky
+    - sirepo-bluesky >=0.7.0
 
 test:
   imports:
