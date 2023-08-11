@@ -148,6 +148,3 @@ Feedstock Maintainers
 * [@mrakitin](https://github.com/mrakitin/)
 * [@thomaswmorris](https://github.com/thomaswmorris/)
 
-
-<!-- dummy commit to enable rerendering -->
-
