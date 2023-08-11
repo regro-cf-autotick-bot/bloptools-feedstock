@@ -1,5 +1,5 @@
 {% set name = "bloptools" %}
-{% set version = "0.3.0" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/bloptools-{{ version }}.tar.gz
-  sha256: e91a9d7b8bf99d35a5f22e5a987e41335575b24820e3bc6e34fd845f2312a9e7
+  sha256: 26923af9090ec3b9514e217fbf856fd16ea78f7f3be5fcf4ea1edf7e71edd452
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -28,9 +28,10 @@ requirements:
     - numpy
     - ophyd
     - ortools-python
+    - pytables
     - pytorch
     - scipy
-    - sirepo-bluesky
+    - sirepo-bluesky >=0.7.0
 
 test:
   imports:
