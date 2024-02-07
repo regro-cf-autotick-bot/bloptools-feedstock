@@ -52,7 +52,6 @@ test:
     - bloptools.experiments.nsls2.tes
     - bloptools.experiments.sirepo
     - bloptools.experiments.sirepo.tes
-    - bloptools.tasks
     - bloptools.utils
   commands:
     - pip check || echo "No problem"
