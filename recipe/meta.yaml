@@ -48,7 +48,6 @@ test:
     - bloptools.experiments.atf
     - bloptools.experiments.atf.atf
     - bloptools.experiments.nsls2
-    - bloptools.experiments.nsls2.iss
     - bloptools.experiments.nsls2.tes
     - bloptools.experiments.sirepo
     - bloptools.experiments.sirepo.tes
