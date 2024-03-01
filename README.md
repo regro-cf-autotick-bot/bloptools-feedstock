@@ -7,7 +7,7 @@ Home: https://github.com/NSLS-II/bloptools
 
 Package license: BSD-3-Clause
 
-Summary: Beamline Optimization Tools
+Summary: Beamline optimization with machine learning
 
 Current build status
 ====================
