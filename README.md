@@ -3,11 +3,13 @@ About bloptools-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/bloptools-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/NSLS-II/bloptools
+Home: https://github.com/NSLS-II/blop
 
 Package license: BSD-3-Clause
 
-Summary: Beamline Optimization Tools
+Summary: Beamline optimization with machine learning
+
+Documentation: https://nsls-ii.github.io/blop
 
 Current build status
 ====================
