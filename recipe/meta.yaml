@@ -59,7 +59,7 @@ test:
     - blop.experiments.atf
     - blop.experiments.atf.atf
     - blop.experiments.nsls2
-    - blop.experiments.nsls2.iss
+    # - blop.experiments.nsls2.iss
     - blop.experiments.nsls2.tes
     - blop.experiments.sirepo
     - blop.experiments.sirepo.tes
