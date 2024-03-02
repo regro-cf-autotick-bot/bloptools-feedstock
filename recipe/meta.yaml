@@ -39,33 +39,47 @@ requirements:
 
 test:
   imports:
-    - bloptools
-    - bloptools.bayesian
-    - bloptools.bayesian.acquisition
-    - bloptools.bayesian.kernels
-    - bloptools.bayesian.models
-    - bloptools.de
-    - bloptools.de.de_opt_utils
-    - bloptools.de.de_optimization
-    - bloptools.de.hardware_flyer
-    - bloptools.experiments
-    - bloptools.experiments.atf
-    - bloptools.experiments.atf.atf
-    - bloptools.experiments.nsls2
-    - bloptools.experiments.nsls2.tes
-    - bloptools.experiments.sirepo
-    - bloptools.experiments.sirepo.tes
-    - bloptools.utils
+    - blop
+    - blop.agent
+    - blop.bayesian
+    - blop.bayesian.acquisition
+    - blop.bayesian.acquisition.analytic
+    - blop.bayesian.acquisition.monte_carlo
+    - blop.bayesian.kernels
+    - blop.bayesian.models
+    - blop.bayesian.plotting
+    - blop.bayesian.transforms
+    - blop.de
+    - blop.de.de_opt_utils
+    - blop.de.de_optimization
+    - blop.de.hardware_flyer
+    - blop.digestion
+    - blop.dofs
+    - blop.experiments
+    - blop.experiments.atf
+    - blop.experiments.atf.atf
+    - blop.experiments.nsls2
+    - blop.experiments.nsls2.iss
+    - blop.experiments.nsls2.tes
+    - blop.experiments.sirepo
+    - blop.experiments.sirepo.tes
+    - blop.objectives
+    - blop.plans
+    - blop.utils
+    - blop.utils.functions
+    - blop.utils.misc
+    - blop.utils.prepare_re_env
   commands:
     - pip check || echo "No problem"
   requires:
     - pip
 
 about:
-  home: https://github.com/NSLS-II/bloptools
+  home: https://github.com/NSLS-II/blop
   summary: Beamline optimization with machine learning
   license: BSD-3-Clause
   license_file: LICENSE
+  doc_url: https://nsls-ii.github.io/blop
 
 extra:
   recipe-maintainers:
