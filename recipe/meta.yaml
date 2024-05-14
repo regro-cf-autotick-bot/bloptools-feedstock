@@ -35,42 +35,33 @@ requirements:
     - pytables
     - pytorch
     - scipy
-    - zict <3.0.0
 
 test:
   imports:
-    - blop
-    - blop.agent
-    - blop.bayesian
-    - blop.bayesian.acquisition
-    - blop.bayesian.acquisition.analytic
-    - blop.bayesian.acquisition.monte_carlo
-    - blop.bayesian.kernels
-    - blop.bayesian.models
-    - blop.bayesian.plotting
-    - blop.bayesian.transforms
-    - blop.de
-    - blop.de.de_opt_utils
-    - blop.de.de_optimization
-    - blop.de.hardware_flyer
-    - blop.digestion
-    - blop.dofs
-    - blop.experiments
-    - blop.experiments.atf
-    - blop.experiments.atf.atf
-    - blop.experiments.nsls2
-    # - blop.experiments.nsls2.iss
-    - blop.experiments.nsls2.tes
-    - blop.experiments.sirepo
-    - blop.experiments.sirepo.tes
-    - blop.objectives
-    - blop.plans
-    - blop.utils
-    - blop.utils.functions
-    - blop.utils.misc
-    - blop.utils.prepare_re_env
+    - src.blop
+    - src.blop.agent
+    - src.blop.bayesian
+    - src.blop.bayesian.acquisition
+    - src.blop.bayesian.acquisition.analytic
+    - src.blop.bayesian.acquisition.monte_carlo
+    - src.blop.bayesian.kernels
+    - src.blop.bayesian.models
+    - src.blop.de
+    - src.blop.de.de_opt_utils
+    - src.blop.de.de_optimization
+    - src.blop.de.hardware_flyer
+    - src.blop.digestion
+    - src.blop.dofs
+    - src.blop.objectives
+    - src.blop.plans
+    - src.blop.plotting
+    - src.blop.utils
+    - src.blop.utils.functions
+    - src.blop.utils.misc
+    - src.blop.utils.prepare_re_env
   commands:
-    - pip check || echo "No problem"
+    # - pip check || echo "No problem"
+    - pip check
   requires:
     - pip
 
