@@ -38,6 +38,9 @@ requirements:
 
 test:
   imports:
+    # The list of imports is generated via the following command:
+    #   $ cd <blop-repo>
+    #   $ find src/blop -name "*.py" | grep -v tests | sed 's/.__init__.py//g' | sed 's/._version//g' | sed 's;/;.;g' | sed 's/\.py//g'| sort -u
     - src.blop
     - src.blop.agent
     - src.blop.bayesian
