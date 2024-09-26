@@ -67,6 +67,7 @@ test:
     - pip check
   requires:
     - pip
+    - databroker =1.2.5
 
 about:
   home: https://github.com/NSLS-II/blop
