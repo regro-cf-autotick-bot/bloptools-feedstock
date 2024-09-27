@@ -60,7 +60,6 @@ test:
     - blop.plotting
     - blop.utils
     - blop.utils.functions
-    - blop.utils.misc
     - blop.utils.prepare_re_env
   commands:
     # - pip check || echo "No problem"
