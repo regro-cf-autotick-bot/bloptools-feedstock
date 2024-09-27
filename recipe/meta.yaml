@@ -66,6 +66,7 @@ test:
     - pip check
   requires:
     - pip
+    - area-detector-handlers
     - databroker =1.2.5
 
 about:
