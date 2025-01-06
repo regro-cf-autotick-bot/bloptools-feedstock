@@ -6,23 +6,23 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/bloptools-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/bloptools-{{ version }}.tar.gz
   sha256: 62a2e301b4afb925851e0141b5aef9f07b37f0c2845e5b7524ccee07de6b68c5
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - hatch-vcs
     - hatchling
     - setuptools-scm
     - pip
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - bluesky
     - botorch
     - databroker
@@ -68,6 +68,7 @@ test:
     - pip
     - area-detector-handlers
     - databroker =1.2.5
+    - python {{ python_min }}
 
 about:
   home: https://github.com/NSLS-II/blop
